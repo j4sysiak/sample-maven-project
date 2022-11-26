@@ -3,16 +3,19 @@ https://www.youtube.com/watch?v=yZFvJEygn_g
 UWAGA!
 ten kod musi być umieszczony na Ubuntu w lokalizacji /opt
 robi to sie tak:
-ten kod przenosimy na Git
+ten kod przenosimy na Git: https://github.com/j4sysiak/sample-maven-project
+
+
 a potem po zalogowaniu do Ubuntu przechodzimy do /opt i najpierw pobieramy kod
-a potem standardowo : git add commit push pull itp.
+git clone https://github.com/j4sysiak/sample-maven-project
+i przechodzimy do projektu:  /opt/sample-maven-project
+a potem standardowo jak robimy w Ubuntu na tym kodzie jakieś zmiany: git add commit push pull itp.
 
     ----------------------------------
     UWAGA:  żeby otrzymać wersje w mexusie w repo snapshot i release to odpal te polecenia w mvn:
     mvn clean package
     mvn deploy
-    lub:
-    mvn clean deploy -P release
+    lub: mvn clean deploy -P release
 
 
     w pomie sterujemy wersjami:
@@ -25,7 +28,7 @@ a potem standardowo : git add commit push pull itp.
 
 
 
-----------------------------------------------------
+-------------------------pliki konfiguracyjne---------------------------
 <!-- NEXUS ustawienia settle.xml z pliku lokalizacji: /root/.m2 /settle.xml-->
 
   <servers>
@@ -48,7 +51,7 @@ a potem standardowo : git add commit push pull itp.
 
 
 
-pom.xml
+-------------------- distributionManagement w pom.xml
 
     <!-- NEXUS ustawienia settle.xml z pliku lokalizacji: /root/.m2 -->
     <distributionManagement>
