@@ -28,8 +28,8 @@ a potem standardowo jak robimy w Ubuntu na tym kodzie jakieś zmiany: git add co
 
 
 
--------------------------pliki konfiguracyjne---------------------------
-<!-- NEXUS ustawienia settle.xml z pliku lokalizacji: /root/.m2 /settle.xml-->
+-------------------------pliki konfiguracyjne: settings.xml---------------------------
+<!-- NEXUS ustawienia settings.xml z pliku lokalizacji: /root/.m2 /settle.xml-->
 
   <servers>
         <server>
@@ -51,7 +51,7 @@ a potem standardowo jak robimy w Ubuntu na tym kodzie jakieś zmiany: git add co
 
 
 
--------------------- distributionManagement w pom.xml
+-------------------- tag distributionManagement w pom.xml -------------------------------------------
 
     <!-- NEXUS ustawienia settle.xml z pliku lokalizacji: /root/.m2 -->
     <distributionManagement>
