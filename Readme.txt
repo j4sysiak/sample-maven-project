@@ -22,11 +22,7 @@ git push / pull    ... itp
 
 
     w pomie sterujemy wersjami:
-<<<<<<< HEAD
-    <!--  <version>1.5-SNAPSHOT</version>-->
-=======
     <!--  <version>1.8-SNAPSHOT</version>-->
->>>>>>> b7ae39b271da488effcead1b3329357ecf307bf5
                 lub
         <version>1.6-RELEASE</version>
 
