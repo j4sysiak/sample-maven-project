@@ -3,13 +3,16 @@ https://www.youtube.com/watch?v=yZFvJEygn_g
 UWAGA!
 ten kod musi być umieszczony na Ubuntu w lokalizacji /opt
 robi to sie tak:
-ten kod przenosimy na Git: https://github.com/j4sysiak/sample-maven-project
+ten kod przenosimy pushujemy na Git: https://github.com/j4sysiak/sample-maven-project
 
 
 a potem po zalogowaniu do Ubuntu przechodzimy do /opt i najpierw pobieramy kod
 git clone https://github.com/j4sysiak/sample-maven-project
 i przechodzimy do projektu:  /opt/sample-maven-project
-a potem standardowo jak robimy w Ubuntu na tym kodzie jakieś zmiany: git add commit push pull itp.
+a potem standardowo jak robimy w Ubuntu na tym kodzie jakieś zmiany: .
+git add
+git commit
+git push / pull    ... itp
 
     ----------------------------------
     UWAGA:  żeby otrzymać wersje w mexusie w repo snapshot i release to odpal te polecenia w mvn:
@@ -19,12 +22,13 @@ a potem standardowo jak robimy w Ubuntu na tym kodzie jakieś zmiany: git add co
 
 
     w pomie sterujemy wersjami:
-    <!--  <version>1.5-SNAPSHOT</version>-->
+    <!--  <version>1.8-SNAPSHOT</version>-->
+                lub
         <version>1.6-RELEASE</version>
 
-        w zależności co wybierzemy RELEASE/SNAPSHOT taka wesja binarek *.JAR pojawi się na Nexus w odpowiednich lokalizacjach:
-        - http://localhost:9081/nexus/content/repositories/maven-release   dla <version>1.6-RELEASE</version>
-        - http://localhost:9081/nexus/content/repositories/maven-snapshots   dla <version>1.6-SNAPSHOT</version>
+        w zależności co wybierzemy RELEASE/SNAPSHOT taka wesja binarek *.jar pojawi się na Nexus w odpowiednich lokalizacjach:
+        - http://localhost:8081/#browse/browse:maven-releases   dla opcji: <version>1.6-RELEASE</version>
+        - http://localhost:8081/#browse/browse:maven-snapshots   dla opcji:  <version>1.7-SNAPSHOT</version>
 
 
 
