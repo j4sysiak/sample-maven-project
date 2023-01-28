@@ -5,8 +5,13 @@
   <groupId>flipkart</groupId>
   <artifactId>offers</artifactId>
 
+<<<<<<< HEAD
   <!-- <version>1.5-release</version> -->
   <version>1.7-SNAPSHOT</version> 
+=======
+	  <!-- <version>1.5-release</version> -->
+  	 <version>1.8-SNAPSHOT</version>
+>>>>>>> b7ae39b271da488effcead1b3329357ecf307bf5
 
   <packaging>jar</packaging>
 
